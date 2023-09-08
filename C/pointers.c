@@ -10,8 +10,24 @@
 // Create two pointers and assign the addresses of the two integer variables to them.
 // Write a function that takes two integer pointers as arguments.
 // Within the function, declare a temporary integer variable.
-// Use the temporary integer to hold the value of the first pointer, then assign the value of the second pointer to the first, and finally, assign the value held in the temporary variable to the second pointer.
+// Use the temporary integer to hold the value of the first pointer, then assign the value of the second pointer to the first, and finally,
+// assign the value held in the temporary variable to the second pointer.
 // In the main(), call the function and then print the values of the two integers to ensure they were swapped.
+
+void swapInt(int *a, int *b){
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+    printf("\na:%d ", *a);
+    printf("\nb:%d", *b);
+}
+
+int main(){
+    int a = 2, b = 4;
+    int *ptr = &a, *ptrTwo = &b;
+    swapInt(&a, &b);
+}
 
 // Write a function that computes the sum of an integer array using pointer arithmetic instead of array indexing.
 // The function should take an integer pointer (the array) and the size of the array as arguments.
