@@ -14,6 +14,8 @@
 // assign the value held in the temporary variable to the second pointer.
 // In the main(), call the function and then print the values of the two integers to ensure they were swapped.
 
+//Solution:
+
 void swapInt(int *a, int *b){
     int temp;
     temp = *a;
