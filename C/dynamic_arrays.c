@@ -16,7 +16,7 @@ int main(){
 // Display the sum.
 // Finally, don't forget to free the allocated memory.
 // Hint: You can use a loop to take input for the elements and another loop or the same loop to calculate the sum.
-    int i, siz, *arr;
+    int i, sum = 0, siz, *arr;
 
     printf("digite o tamanho do array: ");
     scanf("%d", &siz);
@@ -33,6 +33,16 @@ int main(){
         for(i=0; i<siz; ++i){
             printf("%d ", arr[i]);
         }
+
+        //calculate the sum of all elements 
+        for(i=0; i<siz; ++i){
+            sum += arr[i];
+        }
+        
+        printf("\nSum: %d", sum);
+
+        //dynamicaly invert the array order
+        
 
     } else if (arr == NULL) {
         printf("failed");
