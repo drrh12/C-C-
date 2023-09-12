@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 // We can create a dynamic array in C by using the following methods:
-
-
 
 int main(){
 // Using malloc() Function
@@ -34,7 +33,6 @@ int main(){
             printf("%d ", arr[i]);
         }
 
-        //calculate the sum of all elements 
         for(i=0; i<siz; ++i){
             sum += arr[i];
         }
@@ -61,7 +59,7 @@ int main(){
 
     free(arr);
 
-    return 0;
+    //return 0;
 
 // Reverse a Dynamic String:
 
@@ -72,6 +70,19 @@ int main(){
 // Print out the reversed string.
 // Don't forget to free the allocated memory.
 // Hint: You can use string functions like strlen to find out the length. Use a loop to iterate from the end of the original string to the start and populate the new string.
+
+char strSize, *str;
+
+printf("\nInput a string: ");
+scanf("%s", &strSize);
+
+for (i=0; i<strSize;++i){
+    str = &strSize;
+}
+
+printf("%s", str);
+
+return 0;
 
 // Find the Maximum in a Dynamic Array:
 
