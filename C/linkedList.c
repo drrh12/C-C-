@@ -62,7 +62,8 @@ void addEnd(struct node **head, int data){
 }
 
 int main(){
-int size;
+    
+int size, i;
 
 one = malloc(sizeof(struct node));
 two = malloc(sizeof(struct node));
@@ -93,6 +94,10 @@ printf("\n");
 printList(head);
 
 addEnd(&head, 8);
+
+for(i=0;i<4;++i){
+    addEnd(&head, i);
+}
 
 printf("\n");
 
